@@ -28,11 +28,9 @@
     }
   </script>
 
-  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
   <style>
-    /* small custom fixes */
     .hero-logo { max-width: 300px; }
     .card-shadow { box-shadow: 0 6px 18px rgba(16,20,24,0.06); }
     .object-focus-center { object-position: center center; }
@@ -47,7 +45,7 @@
         <img src="./logo.jpeg" alt="Happy Hounds logo" class="hero-logo object-contain" />
         <div>
           <h1 class="text-xl font-bold text-burgundy">Happy Hounds Grooming</h1>
-          <p class="text-lg font-bold text-gray-700">Happy Hounds for Happy Homes</p>
+          <p class="text-xs text-gray-500">Happy Hounds for Happy Homes</p>
         </div>
       </div>
 
@@ -59,7 +57,6 @@
         <a href="#book" class="ml-3 bg-burgundy text-white px-4 py-2 rounded-lg shadow hover:bg-burgundy/90 transition">Book</a>
       </nav>
 
-      <!-- mobile menu button -->
       <div class="md:hidden">
         <button id="mobileBtn" aria-label="Open menu" class="p-2 rounded-md border border-gray-200">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-burgundy" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -69,7 +66,6 @@
       </div>
     </div>
 
-    <!-- mobile nav (hidden by default) -->
     <div id="mobileNav" class="hidden md:hidden border-t border-gray-100">
       <div class="px-4 pb-4">
         <a class="block py-2 hover:text-burgundy" href="#home">Home</a>
@@ -91,13 +87,6 @@
         <div class="flex flex-wrap justify-center gap-4">
           <a href="#book" class="bg-white text-burgundy px-6 py-3 rounded-lg font-semibold shadow hover:opacity-95 transition">Book an Appointment</a>
           <a href="#services" class="border-2 border-white px-6 py-3 rounded-lg font-semibold hover:bg-white/10 transition">View Services & Prices</a>
-        </div>
-
-        <div class="mt-8 text-sm flex flex-wrap justify-center gap-4">
-          <a href="tel:+447749965293" class="inline-block">📞 07749 965 293</a>
-          <a href="mailto:happyhoundsemilie@gmail.com" class="inline-block">✉️ happyhoundsemilie@gmail.com</a>
-          <a href="https://www.facebook.com/happyhounds.emilie" target="_blank" class="inline-block">📘 Facebook</a>
-          <a href="https://www.instagram.com/happyhoundsemilie" target="_blank" class="inline-block">📸 Instagram</a>
         </div>
       </div>
     </section>
@@ -147,13 +136,13 @@
             <p class="text-gray-600 mb-3">Full wash, conditioning, brush out and tidy up.</p>
             <div class="font-bold text-burgundy text-xl">From £20</div>
           </div>
-
           <div class="bg-white rounded-xl p-6 card-shadow hover:shadow-lg transition">
             <div class="text-3xl mb-3">🐕</div>
             <h4 class="font-semibold text-lg mb-2">Puppy Introduction Groom</h4>
             <p class="text-gray-600 mb-3">Short, gentle sessions to introduce puppies to grooming tools and handling.</p>
             <div class="font-bold text-burgundy text-xl">From £25</div>
           </div>
+
           <div class="bg-white rounded-xl p-6 card-shadow hover:shadow-lg transition">
             <div class="text-3xl mb-3">🪮</div>
             <h4 class="font-semibold text-lg mb-2">De-shedding & Coat Care</h4>
@@ -175,8 +164,6 @@
             <div class="font-bold text-burgundy text-xl">£5</div>
           </div>
         </div>
-
-        <div class="mt-8 text-sm text-gray-500">If your dog is very matted or requires extra handling, I will confirm any additional charge before proceeding.</div>
       </div>
     </section>
 
@@ -185,12 +172,13 @@
       <div class="container mx-auto px-4 text-center">
         <h3 class="text-2xl font-bold text-burgundy mb-8">Gallery</h3>
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-          <img src="./dog5.jpg" alt="Bath & De-shed" class="w-full h-80 object-cover object-center rounded-lg" />
-          <img src="./dog2.jpg" alt="Groomed dog 1" class="w-full h-80 object-cover object-center rounded-lg" />
-          <img src="./dog3.jpg" alt="Groomed dog 2" class="w-full h-80 object-cover object-center rounded-lg" />
-          <img src="./dog4.jpg" alt="Bath picture" class="w-full h-80 object-cover object-center rounded-lg" />
-          <img src="./dog6.jpg" alt="Groomed dog 5" class="w-full h-80 object-cover object-center rounded-lg" />
-          <img src="./dog7.jpg" alt="Groomed dog 6" class="w-full h-80 object-cover object-center rounded-lg" />
+          <img src="./dog5.jpg" alt="Groomed dog 1" class="w-full h-64 object-cover object-center rounded-lg" />
+          <img src="./dog1.jpg" alt="Groomed dog 2" class="w-full h-64 object-cover object-center rounded-lg" />
+          <img src="./dog2.jpg" alt="Groomed dog 3" class="w-full h-64 object-cover object-center rounded-lg" />
+          <img src="./dog3.jpg" alt="Groomed dog 4" class="w-full h-64 object-cover object-center rounded-lg" />
+          <img src="./dog4.jpg" alt="Groomed dog 5" class="w-full h-64 object-cover object-center rounded-lg" />
+          <img src="./dog6.jpg" alt="Groomed dog 6" class="w-full h-64 object-cover object-center rounded-lg" />
+          <img src="./dog7.jpg" alt="Groomed dog 7" class="w-full h-64 object-cover object-center rounded-lg" />
         </div>
       </div>
     </section>
@@ -198,11 +186,9 @@
     <!-- Contact & Booking -->
     <section id="contact" class="py-14">
       <div class="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
-        <!-- Contact Form -->
         <div>
           <h3 class="text-2xl font-bold text-burgundy mb-3">Contact & Bookings</h3>
           <p class="text-gray-600 mb-6">Call, email, or use the form below to get in touch. I’ll confirm your appointment and provide any advice you need about grooming.</p>
-
           <form action="mailto:happyhoundsemilie@gmail.com" method="post" class="space-y-4">
             <input type="text" name="name" placeholder="Your Name" class="w-full border border-gray-300 p-3 rounded-lg" required>
             <input type="email" name="email" placeholder="Your Email" class="w-full border border-gray-300 p-3 rounded-lg" required>
@@ -212,7 +198,6 @@
           </form>
         </div>
 
-        <!-- Google Map -->
         <div>
           <h3 class="text-2xl font-bold text-burgundy mb-3">Find Us</h3>
           <p class="text-gray-600 mb-6">Happy Hounds — 26 Windsor Street, Stapleford, Nottingham NG9 7HG</p>
@@ -249,7 +234,6 @@
           <p>📞 07749 965 293</p>
           <p>✉️ happyhoundsemilie@gmail.com</p>
         </div>
-
         <div>
           <h4 class="font-semibold text-lg mb-2">Social</h4>
           <ul>
@@ -257,7 +241,6 @@
             <li><a href="https://www.instagram.com/happyhoundsemilie" target="_blank" class="hover:underline">Instagram</a></li>
           </ul>
         </div>
-
         <div>
           <h4 class="font-semibold text-lg mb-2">Opening Hours</h4>
           <p>Mon–Fri: 9:30am–6:00pm</p>
@@ -265,18 +248,13 @@
           <p>Sun: Closed</p>
         </div>
       </div>
-
       <div class="text-center text-sm text-white/70 mt-6">© 2025 Happy Hounds. All rights reserved.</div>
     </footer>
 
-    <!-- Scripts -->
     <script>
-      // mobile menu toggle
       const mobileBtn = document.getElementById('mobileBtn');
       const mobileNav = document.getElementById('mobileNav');
-      mobileBtn.addEventListener('click', () => {
-        mobileNav.classList.toggle('hidden');
-      });
+      mobileBtn.addEventListener('click', () => { mobileNav.classList.toggle('hidden'); });
     </script>
 
 </body>
